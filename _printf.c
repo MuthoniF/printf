@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	if ((format[0] == '%' && !format[1]) || !format)
 		return (-1);
-	
+
 	i = format;
 	while (*i)
 	{
@@ -33,18 +33,12 @@ int _printf(const char *format, ...)
 				continue;
 			}
 			while (get_fl(*i, &fls))
-			{
 				i++;
-			}
-			*ptr = get_print(*i);
+			ptr = get_print(*i);
 			if (*ptr != NULL)
-			{
-				count += ptr(list, &fls)
-			}
+				count += ptr(list, &fls);
 			else
-			{
 				count += _printf("%%%c", *i);
-			}
 		}
 		else
 			count += _putchar(*i);

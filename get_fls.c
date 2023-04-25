@@ -12,7 +12,7 @@ int get_fls(char s, fls_t *f)
 
 	if (s == '+')
 	{
-		f->pl=1;
+		f->pl = 1;
 		j = 1;
 	}
 	else if (s == ' ')
@@ -20,9 +20,9 @@ int get_fls(char s, fls_t *f)
 		f->spac = 1;
 		j = 1;
 	}
-	else if
+	else if (s == '#')
 	{
-		f->ha=1;
+		f->ha = 1;
 		j = 1;
 	}
 	else

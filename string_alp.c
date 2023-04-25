@@ -13,9 +13,9 @@ int print_string(va_list list, fls_t *f)
 
 	(void)f;
 
-	if (!s)
-		s = "NULL";
-	return (_puts(s));
+	if (!i)
+		i = "NULL";
+	return (_puts(i));
 }
 
 /**
