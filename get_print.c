@@ -18,7 +18,7 @@ int (*get_print(char s))(va_list, fls_t *)
 
 	for (i = 0; i < fls; i++)
 	{
-		if (array[i].et == s)
+		if (array[i].c == s)
 			return (array[i].f);
 	}
 	return (NULL);
