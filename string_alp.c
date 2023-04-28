@@ -34,7 +34,7 @@ int print_char(va_list list, fls_t *f)
 
 /**
  * print_percent - prints values with %
- * list: va_list arg
+ * @list: va_list arg
  * @f: pointer to the struct flag
  *
  * Return: num characters
