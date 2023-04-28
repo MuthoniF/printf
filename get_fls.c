@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * get_fls - tuen on flags
+ * get_fl - tuen on flags
  * @s: char with the flag
  * @f: pointer to the struct
  * Return: Flags
  */
-int get_fls(char s, fls_t *f)
+int get_fl(char s, fls_t *f)
 {
 	int j = 0;
 

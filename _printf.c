@@ -42,6 +42,7 @@ int _printf(const char *format, ...)
 		}
 		else
 			count += _putchar(*i);
+		i++;
 	}
 	_putchar(-1);
 	va_end(list);

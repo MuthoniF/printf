@@ -26,7 +26,7 @@ typedef struct printhandle
 	char c;
 	int (*f)(va_list list, fls_t *f);
 } pr_ha;
-int _print(const char *format, ...);
+int _printf(const char *format, ...);
 int get_fl(char s, fls_t *f);
 int (*get_print(char s))(va_list, fls_t *);
 
